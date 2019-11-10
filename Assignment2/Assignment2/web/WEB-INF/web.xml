@@ -1,0 +1,61 @@
+<web-app>
+    
+    <servlet>
+        <servlet-name>Part5Servelet</servlet-name>
+        <servlet-class>servelet.Part5Servelet</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>Part5Servelet</servlet-name>
+        <url-pattern>/Part5Servelet.xls</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part6Servelet</servlet-name>
+        <servlet-class>servelet.Part6Servelet</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>Part6Servelet</servlet-name>
+        <url-pattern>/Part6Servelet.xls</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part7Servelet_welcome</servlet-name>
+        <servlet-class>servelet.Part7Servelet_welcome</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>Part7Servelet_welcome</servlet-name>
+        <url-pattern>/part7Welcome</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part7Servelet_add</servlet-name>
+        <servlet-class>servelet.Part7Servelet_add</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>Part7Servelet_add</servlet-name>
+        <url-pattern>/part7Add</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part7Servelet_search</servlet-name>
+        <servlet-class>servelet.Part7Servelet_search</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>Part7Servelet_search</servlet-name>
+        <url-pattern>/part7Search</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Part8Servelet_welcome</servlet-name>
+        <servlet-class>servelet.Part8Servelet_welcome</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>Part8Servelet_welcome</servlet-name>
+        <url-pattern>/part8Welcome</url-pattern>
+    </servlet-mapping>
+
+   
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>    
+</web-app>

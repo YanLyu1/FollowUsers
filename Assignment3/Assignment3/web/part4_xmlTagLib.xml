@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<Students>
+    
+    <Student>
+        <name>Yan Lyu</name>
+        <course>Web Tool</course>
+        <score>100</score>
+    </Student>
+    
+    <Student>
+        <name>Jhon</name>
+        <course>Web Tool</course>
+        <score>80</score>
+    </Student>   
+    
+    <Student>
+        <name>Snow</name>
+        <course>Web Tool</course>
+        <score>60</score>
+    </Student>
+    
+    <Student>
+        <name>Arya</name>
+        <course>Web Tool</course>
+        <score>40</score>
+    </Student>
+    
+</Students>

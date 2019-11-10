@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> Searching Movies </h1>
+        
+        <form action="Part7Servlet" method="post">
+            Keyword:           
+            <input type="text" name="keyword"/>
+            <br>
+            <label>
+                <input name="search" type="radio" value="title" />Search By Title 
+            </label> 
+            <br>
+            <label>
+                <input name="search" type="radio" value="actor" />Search By Actor 
+            </label> 
+            <br>
+            <label>
+                <input name="search" type="radio" value="actress" />Search By Actress 
+            </label> 
+            <br>
+            <input type="submit" value ="Search Movies"/>
+            <input type="hidden" value="search" name="action"/>
+        </form>
+    </body>
+</html>
