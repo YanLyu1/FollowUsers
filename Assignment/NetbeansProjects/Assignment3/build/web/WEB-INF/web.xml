@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Part6Servlet</servlet-name>
+        <servlet-class>Servlet.Part6Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Part7Servlet</servlet-name>
+        <servlet-class>Servlet.Part7Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Part5Servlet</servlet-name>
+        <servlet-class>Servlet.Part5Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Part6Servlet</servlet-name>
+        <url-pattern>/Part6Servlet.xls</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Part7Servlet</servlet-name>
+        <url-pattern>/Part7Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Part5Servlet</servlet-name>
+        <url-pattern>/Part5Servlet</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list> 
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+  
+    <security-constraint>
+      <web-resource-collection>
+         <web-resource-name>Add Movies</web-resource-name>
+         <url-pattern>/Part7Servlet</url-pattern>
+      </web-resource-collection>
+
+      <auth-constraint>
+         <role-name>tomcat</role-name>
+         <role-name>manager-script</role-name>
+      </auth-constraint>
+   </security-constraint>
+   
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>Authorized Users Only</realm-name> 
+    </login-config>
+   
+   
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+   
+</web-app>

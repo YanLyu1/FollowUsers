@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <title>shopping</title> 
+    </head>
+<body>
+    <table width="500" border="0">
+        <tr>
+            <td colspan="2" style="background-color:#FFA500;">
+                <h1>Shop for musics</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#FFD700;width:100px;vertical-align:top;text-align:center"> Menu </td>
+            <td style="background-color:#eeeeee;height:20px;vertical-align:top;text-align:right"><a href = "cart">cart</a></td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#FFD700;width:100px;vertical-align:top;">
+                <a href = "page_book.html">Books</a><br>
+                <a href = "page_music.html">Music</a><br>
+                <a href = "page_computer.html">Computers</a>
+            </td>
+            <td style="background-color:#eeeeee;height:200px;width:400px;vertical-align:top;">
+                <form method  = "POST" action = "addMusics">
+                    <label>
+                        <input type = 'checkbox' name = 'musics' value = 'I am going to tell you a secret by Madonna'> I am going to tell you a secret by Madonna [$ 26.99]<br/>
+                        <input type = 'checkbox' name = 'musics' value = 'Baby one more time by Betney spear'>Baby one more time by Betney spear [$ 10.95]<br/>
+                        <input type = 'checkbox' name = 'musics' value = 'Justified bu Justin Timberlake'>Justified bu Justin Timberlake [$ 9.97]<br/>
+                        <input type = 'checkbox' name = 'musics' value = 'Loose by Nelly Furtado'>Loose by Nelly Furtado [$ 13.98]<br/>
+                        <input type = 'checkbox' name = 'musics' value = 'mGold Digger by Kenys Westusic5'>Gold Digger by Kenys West [$ 27.99]<br/>
+                    </label>
+                    <br/>
+                    <input type = "submit" value = "add Musics" name = 'add Musics'/>
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

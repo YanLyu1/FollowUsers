@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   
+
+    <script>
+        function imgPreview(fileDom) {
+       
+        if(window.FileReader) {
+            var reader = new FileReader();
+        } else {
+            alert("Sorry!!!");
+        }
+       
+        var file = fileDom.files[0];
+        var imageType = /^image\//;
+        
+        if(!imageType.test(file.type)) {
+            alert("Please choose picture！");
+            return;
+        }
+        
+        reader.onload = function(e) {
+            
+            var img = document.getElementById("preview");
+            
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+    </script>
+
+</head>
+<body>
+    <form method = "GET" action = "register.do">
+        <h3 align ="center">Homework1 Yaji Cui</h3>
+        <hr />
+        <div>
+        <p align="center">Email: <input  type="email" name = "email" /> </br></p>
+        <p align="center">Password:<input style="vertical-align:middle;" type="password" name = "Password" /> </br></p>
+        <p align="center">Confirm Password:<input type="password" name = "repassword" /> </br></p>
+        
+        <p align="center">
+            Upload Your Picture:
+            <img  id="preview" width="128" height="128">
+            <input type="file" name="file" id = "input_file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" onchange="imgPreview(this)" >
+        </br></p>
+       
+        
+        <p align="center">Gender: 
+            <input type="radio" name="sex" value="female">Male
+            <input type="radio" name="sex" value="female">Female</br>
+        <p align="center">Select Country:
+            <select name="Country">
+            <option value="UK">United Kindom</option>
+            <option value="USA">Uniter States</option>
+            <option value="china">China</option>
+            </select>
+            <br></p>
+        <p align="center">Hobby: 
+            <input style="vertical-align:middle;" type="checkbox" name="vehicle" value="Bike">Cricket
+            <input type="checkbox" name="vehicle" value="Bike">Football</br></p>
+        <p align="center">Address:
+            <input type="text" name="adress" style="width:300px; height:200px;" ></br></p>
+
+        <p align="center"><input type="submit" value = "REGISTER" /> </br></p>
+    </div>
+       
+       
+    </form>
+</body>
+</html>

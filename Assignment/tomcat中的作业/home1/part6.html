@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="../js/getUrl.js" type="text/javascript"></script>
+   
+    <script>
+        function getParam() {
+            var url = location.search; 
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                num = decodeURIComponent(strs[0].replace("num=",""));
+                document.write("<form method = 'POST' action = 'child.do' >");
+            for(var i=1; i<= num; i++){
+                document.write("Please enter the name of child number" + i + "</br>");
+                document.write("<input type = 'text' name = 'name' > <br>")            
+            }
+            document.write("<p align='center'><input type='submit' value = 'Submit Query' /> </br></p>");
+                
+            }
+        }
+           
+        
+        </script>
+        </head>
+
+
+
+
+<body onload="getParam()">
+        
+        <hr/>
+ 
+       
+    </form>
+</body>
+</html>

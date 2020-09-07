@@ -1,0 +1,50 @@
+ <web-app>
+  <servlet>
+    <servlet-name>part2</servlet-name>
+    <servlet-class>Part_2</servlet-class> 
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>part2</servlet-name> 
+    <url-pattern>/showRequest.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>part3</servlet-name>
+    <servlet-class>Part_3</servlet-class> 
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>part3</servlet-name> 
+    <url-pattern>/information.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>part4</servlet-name>
+    <servlet-class>Part_4</servlet-class> 
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>part4</servlet-name> 
+    <url-pattern>/informationNames.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>part5</servlet-name>
+    <servlet-class>Part_5</servlet-class> 
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>part5</servlet-name> 
+    <url-pattern>/informationMap.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>part6</servlet-name>
+    <servlet-class>Part_6</servlet-class> 
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>part6</servlet-name> 
+    <url-pattern>/child.do</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
