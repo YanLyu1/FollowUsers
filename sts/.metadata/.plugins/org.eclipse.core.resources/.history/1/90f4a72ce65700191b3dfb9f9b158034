@@ -1,0 +1,11 @@
+package com.me.report;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.View;
+
+@Controller
+public class ReportController {
+	public View getReport() {
+		
+	}
+}

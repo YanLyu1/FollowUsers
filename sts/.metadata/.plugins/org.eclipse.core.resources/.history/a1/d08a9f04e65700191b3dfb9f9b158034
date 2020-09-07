@@ -1,0 +1,6 @@
+package com.me.report;
+
+@Controller
+public class ReportController {
+
+}

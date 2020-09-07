@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+/Users/lvyan/Desktop/sts/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+411548126.index
+79542308.index
+3577665096.index
+2535219447.index
+399183032.index
+4086179304.index
+363497591.index
+2171384239.index
+1327666069.index
