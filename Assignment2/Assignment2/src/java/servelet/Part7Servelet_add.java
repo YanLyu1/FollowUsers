@@ -16,6 +16,13 @@ import javax.servlet.http.*;
 
 public class Part7Servelet_add extends  HttpServlet {
     
+    public void init(ServletConfig config) throws ServletException {
+        // Store the ServletConfig object and log the initialization
+        super.init(config);
+        System.out.println("init run");
+        // Load the database to prepare for requests
+    }
+    
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String redirectPage = "./wrong.html";
         
